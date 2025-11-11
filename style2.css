@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;/*efeito visual melhor*/
+font-family:"Montserrat", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;/* vh=altura da janela de visualização*/
+    background-color: #d1b3b3;
+    color: aliceblue;
+    display: flex;/*ajudar no alinhamento*/
+    flex-direction: column;
+    justify-content: space-between;/*organizador de conteúdos*/
+}
+
+
+/* HEADER */
+header {
+  background:#bd5960;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+header h1 {
+  font-family: "Chewy", cursive;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+  color: #3500b0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.3s;}
+  /*****************************************************/
+/*tira os traçados,decoração*/
+a{
+    text-decoration: none;
+    color: #fff;
+}
+footer{
+    background-color: #bd5960;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*itens ocupam extremos, cada um de um lado*/
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content h2{
+    margin-bottom: 2%;
+    font-size: 2.2em;/*define tamanho do texto 2.2 vezes o tamanho da fonte*/
+}
+
+.text{
+    margin-bottom: 10%;
+}
+footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+/*quadrados com fotos que abrem meus projetos*/
+.projetos{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+   
+}
+/*ajustes da img*/
+.card{
+    width: 100px;
+    height: 100px;
+    background-color: #d1b3b3;
+    border-radius: 8px;
+    margin-right: 1.8em;/*espaçamento um do lado do outro*/
+    margin-left: 1.8em;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 1.25 ease-in-out;/*luz azul na img*/
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    vertical-align: middle;/*alinhar espaços verticalmente*/
+}
+.cardhover{
+   box-shadow: 0px 0px 9px #000000;
+}
+
+header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+header h1, a{
+    color: #000000;
+    transition: 0.2s ease-in-out;
+}
+main figure{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/*img*/
+main figure img{
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  margin-bottom: 20px;
+  border: 2px solid#000000;
+  transition: 0.2s ease-in-out;
+}
+/*luz azul na img*/
+main figure img:hover{
+   box-shadow: 0px 0px 8px #ff18b2;
+}
+
+text p{
+    width: 75%;
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6;
+    color: black;
+}

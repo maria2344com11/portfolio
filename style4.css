@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  
+}
+
+
+
+/* HEADER */
+header {
+  background:#bd5960;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+header h1 {
+  font-family: "Chewy", cursive;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+  color: #3500b0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.3s;}
+  /*****************************************************/
+
+h1 {
+  color: #333;
+ text-align: center;
+}
+
+h2 {
+  color: #6f00ff;
+ text-align: center;
+}
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.galeria {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  gap: 10px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+img:hover {
+  transform: scale(1.2); /* Aumenta em 20% */
+
+ }
+
+
+.titulo-link {
+    text-decoration: none; /* tira o sublinhado */
+    color: white; /* mantém o mesmo tom do topo */
+}
+
+footer{
+    background-color: #bd5960;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+ 

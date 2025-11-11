@@ -1,0 +1,172 @@
+.box{
+    height: 170px;
+    border: 3px  black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background:#bd5960;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+header h1 {
+  font-family: "Chewy", cursive;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+  color: #3500b0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.3s;
+}
+/***********************************código vídeos*****************************/
+.video{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;/*linhas*/
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+/*deixar vídeos lado a lado, espaço que o video ficara*/
+ .video-item{
+    width:50%;
+    height: auto;
+ }
+ /*ajustar video*/
+ .videobox{
+    width: 100%;
+    height: auto;
+ }
+/*legenda*/
+ .textodescri{
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+ }
+ /****************************fim-rodapé************/
+ footer{
+    background-color: #bd5960;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*************código das imagens******************/
+.galeria{
+    display: flex;/*flexivel, permitindo que os elementos(article) se ajustam automaticamente*/
+    flex-wrap: wrap;/* article quebrem para a proxima linha*/
+    justify-content: space-between/*espaçamento entre article*/;
+    border: 1px black;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    
+}
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+article {
+    padding: 10px;
+    width: calc(33.333% - 20px); /* 3 por linha */
+    box-sizing: border-box;
+    
+}
+
+article img {
+    width: 400px;
+    height: 300px;
+    display: block;
+  }
+
+  img:hover {
+  transform: scale(1.1); /* Aumenta em 20% */
+
+ }
+
+aside {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    article {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        width: 100%; 
+    }
+}
+
+
+.titulo-link {
+    text-decoration: none; /* tira o sublinhado */
+    color: white; /* mantém o mesmo tom do topo */
+}
+
+
+
+
+    
